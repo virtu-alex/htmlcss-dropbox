@@ -27,40 +27,48 @@ header {
     vertical-align: middle;
 }
 
-h1{
+.navbar > li{
+    padding-right: 3rem;
+}
+
+h1 {
     font-size: 6rem;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
 
-.navbar{
+.navbar {
     display: flex;
 }
 
-a{
+.offers{
+    padding: 1rem;
+}
+
+a {
     color: black;
 }
 
-#annulla{
+#annulla {
     padding-top: 50px;
 }
 
-.navbar{
+.navbar {
     color: black;
 }
-.blue-button{
+
+.blue-button {
     background-color: #0061FF;
     color: white;
     padding: 10px;
 }
 
-li{
-    padding-right: 3rem;
+.offers > li{
+    font-size: 1.5rem;
 }
-
 
 .debug {
     border: 1px solid black;
@@ -73,9 +81,6 @@ li{
 
 .col-head {
     display: flex;
-}
-
-img{
 }
 
 /* CONTAINERS */
@@ -104,32 +109,37 @@ img{
     justify-content: center;
 }
 
-#logo{
+#logo {
     height: 50px;
     padding-right: 50px;
 }
 
-p{
+.col-jumbo-sx > p{
     font-size: 2rem;
 }
+
+
 
 
 /* UTILS */
 
 
-.pad-bot50{
+.pad-bot50 {
     padding-bottom: 50px;
 }
 
-.pad-top50{
+.pad-top50 {
     padding-top: 50px;
 }
+.pad-top100 {
+    padding-top: 100px;
+}
 
-.pad-bot25{
+.pad-bot25 {
     padding-bottom: 25px;
 }
 
-.pad-top25{
+.pad-top25 {
     padding-top: 25px;
 }
 
@@ -138,22 +148,37 @@ p{
 }
 
 .col-jumbo-sx {
-    flex-basis: 100%;
+    flex-basis: 40%;
 }
 
-#img-jumbo{
+.col-jumbo-dx {
+    flex-basis: 60%;
+    position: relative;
+}
+
+.w100{
     width: 100%;
-    height: auto;
 }
 
-.fa-solid{
+#img-jumbo {
+    left: 0;
+    position: absolute;
+    max-width: 130%;
+    height: 600px;
 }
 
-a{
+.txt-center{
+    padding: 1rem;
+    text-align: center;
+}
+
+.fa-solid {}
+
+a {
     text-decoration: none;
 }
 
-h2{
+h2 {
     font-size: 3rem;
 }
 
@@ -165,13 +190,21 @@ h2{
     width: 100%;
 }
 
-span{
+span {
     padding-right: 30px;
 }
 
-.fa-solid.fa-circle{
+.row{
+    display: flex;
+}
+
+.fa-solid.fa-circle {
     padding-right: 5px;
     color: #4491C7;
+}
+
+.plus-font{
+    font-size: 1.5rem;
 }
 
 .plans-card {
@@ -183,18 +216,36 @@ span{
     flex-basis: 30%;
 }
 
-.team {}
+h5{
+    
+}
+
+.payment-mode{
+    padding: 10px;
+    border: 1px solid grey;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-check {
+    color: #0061FF;
+}
 
 .col-team-sx {
-    flex-basis: 70%;
+    padding: 1rem;
+    flex-basis: 60%;
 }
 
 .col-team-dx {
-    flex-basis: 30%;
+    padding: 1rem;
+    flex-basis: 40%;
 }
 
-.col-team-down {
-    flex-basis: 100%;
+.col-team-dx {
+    padding: 1rem;
+    flex-basis: 40%;
 }
 
 .row-partner {

@@ -20,7 +20,7 @@
         <div class="row-head">
             <div class="col-head"><img id="logo" src="img/logo-small.png" alt="logo dropbox">
                 <ul class="navbar">
-                    <li><a href="#">Perche' Dropbox</a></li>
+                    <li><a href="#">Perch&egrave; Dropbox</a></li>
                     <li><a href="#">Funzioni</a></li>
                     <li><a href="#">Piani e prezzi</a></li>
                 </ul>
@@ -30,7 +30,7 @@
                     <li><a href="#">Supporto</a></li>
                     <li><a href="#">L'ufficio vendite</a></li>
                     <li><a href="#">Accedi</a></li>
-                    <li><a class="blue-button" href="#">Inizia</a></li>
+                    <li class="blue-button"><a href="#">Inizia</a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="jumbo-content">
                         <div class="col-jumbo-sx">
-                            <p class="pad-bot50">
+                            <p class="pad-bot50 font-plus">
                                 Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo
                                 stesso posto. Dropbox Business e' piu' di uno spazio di archiviazione sicuro: e' un modo
                                 intelligente e integrato per ottimizzare il flusso di lavoro esistente.
@@ -73,58 +73,111 @@
 
         <!-- PIANI D'ACQUISTO -->
 
-        <section class="container debug">
-            <div class="title-top debug">
-                <h2 class="pad-bot50 pad-top50">Trova il piano bisuness che fa per te</h2>
+        <section class="container ">
+            <div class="title-top">
+                <h2 class="pad-bot50 pad-top100">Trova il piano bisuness che fa per te</h2>
             </div>
-            <div>
-                <span><i class="fa-solid fa-circle"></i>Fatturazione Mensile</span>
-                <span><i class="fa-solid fa-circle"></i>Fatturazione annuale</span>
+            <div class="w100 pad-bot50">
+                <span><input type="radio" name="/" value="html" />Fatturazione Mensile</span>
+                <span><input type="radio" name="/" value="html" />Fatturazione annuale</span>
             </div>
-            <div class="plans debug">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati nemo quod voluptatem, esse corporis
-                omnis eius assumenda qui culpa, repellat iusto totam tempora ratione repudiandae possimus perferendis
-                exercitationem ipsa. Vel!
+            <div class="payment-mode">
+                <div class="col-plans">
+                    <h4><i class="fa-solid fa-user"></i> Singolo</h4>
+                </div>
+
+                <div class="col-plans">
+                    <h4><i class="fa-solid fa-users"></i> Team</h4>
+                </div>
+                <div class="col-plans">
+                    <h4><i class="fa-solid fa-city"></i> Azienda</h4>
+                </div>
             </div>
 
-            <div class="plans-card debug">
-                <div class="col-plans debug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi
-                    inventore illum dolore expedita molestias alias, nostrum laborum quisquam, sit maxime dolorum
-                    reiciendis quam? Temporibus fugit deleniti doloremque officia perspiciatis Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Adipisci, quo hic omnis totam ea unde error molestias voluptate
-                    animi minus tempore libero excepturi sequi ipsam iste, illum soluta quae et.</div>
-                <div class="col-plans debug">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates a iste
-                    consectetur! Voluptates, commodi ad a veniam dolores perferendis inventore molestias totam ratione
-                    dicta eveniet corporis tenetur reprehenderit. Sit, voluptatibus. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Adipisci, quo hic omnis totam ea unde error molestias voluptate animi
-                    minus tempore libero excepturi sequi ipsam iste, illum soluta quae et.</div>
-                <div class="col-plans debug">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo impedit
-                    totam sit aperiam harum aspernatur nihil iure odio quis laudantium asperiores a, possimus aliquid
-                    illum ratione magni, sint perferendis voluptate. Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Adipisci, quo hic omnis totam ea unde error molestias voluptate animi minus tempore libero
-                    excepturi sequi ipsam iste, illum soluta quae et.</div>
+            <div class="plans-card pad-bot50">
+                <div class="col-plans debug">
+                    <ul class="offers">
+                        <li>
+                            <h4 class="pad-bot25 plus-font">Professional</h4>
+                        </li>
+                        <li><b>&euro; 12.00</b><br>/mese</li>
+                        <li class="pad-top50 pad-bot25"><i class="fa-solid fa-user"></i> 1 utente</li>
+                        <li class="pad-bot25"><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro</li>
+                        <li class="pad-bot50"><i class="fa-solid fa-share-nodes"></i> Funzioni di produttivita' premium e condivisione file semplice e sicura
+                        </li>
+                        <li class="pad-bot25"><a class="blue-button plus-font" href="#">Prova gratis per 30 giorni</a>
+                        </li>
+                        <li class="pad-bot25">Oppure <a href="">acquista ora</a> </li>
+                        <hr>
+                        <li class="pad-top50">
+                            <h5>Punti Salienti del piano</h5>
+                        </li>
+                        <li class="pad-top25"><i class="fa-solid fa-check"></i> Invia file fino a 100 GB con Dropbox Transfert</li>
+                        <li class="pad-top25"><i class="fa-solid fa-check"></i> Cartelle offline su dispositivi mobili</li>
+                    </ul>
+                </div>
+                <div class="col-plans debug">
+                    <ul class="offers">
+                        <li>
+                            <h4 class="pad-bot25 plus-font">Advanced</h4>
+                        </li>
+                        <li><b>&euro; 18.00</b><br>utente/mese</li>
+                        <li class="pad-top50 pad-bot25"><i class="fa-solid fa-users"></i> 3 o pi&ugrave; utenti</li>
+                        <li class="pad-bot25"><i class="fa-solid fa-folder"></i> Tutto lo spazio di cui ha bisogno il tuo team</li>
+                        <li class="pad-bot50"><i class="fa-solid fa-share-nodes"></i> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del
+                            tuo team</li>
+                        <li class="pad-bot25"><a class="blue-button plus-font" href="#">Prova gratis per 30 giorni</a>
+                        </li>
+                        <li class="pad-bot25">Oppure <a href="">acquista ora</a> </li>
+                        <hr>
+                        <li class="pad-top50">
+                            <h5>Punti Salienti del piano</h5>
+                        </li>
+                        <li class="pad-top25"><i class="fa-solid fa-check"></i> Nessun limite di spazio per i file</li>
+                        <li class="pad-top25"><i class="fa-solid fa-check"></i> Cartelle offline su dispositivi mobili</li>
+                        <li class="pad-top25"><i class="fa-solid fa-check"></i> Risparmio del 50% rispetto alle iscrizioni singole</li>
+                        <li class="pad-top25"><i class="fa-solid fa-check"></i> Possibilit&agrave; di inserire nuovi membri del team</li>
+                        <li class="pad-top25"><i class="fa-solid fa-check"></i> Gestione dei permessi in base ai ruoli</li>
+                    </ul>
+                </div>
+                <div class="col-plans debug">
+                    <ul class="offers">
+                        <li>
+                            <h4 class="pad-bot25 plus-font">Enterprise</h4>
+                        </li>
+                        <li><b>Contattaci</b><br>-</li>
+                        <li class="pad-top50 pad-bot25"><i class="fa-solid fa-user"></i> 10 o pi&ugrave; utente</li>
+                        <li class="pad-bot25"><i class="fa-solid fa-folder"></i> Soluzioni personalizzabili per la tua azienda</li>
+                        <li class="pad-bot50"><i class="fa-solid fa-share-nodes"></i> Assistenza personalizzata per aiutare gli amministratori in una gestione
+                            su larga scala</li>
+                        <li class="pad-bot25"><a class="blue-button plus-font" href="#">Contattaci</a></li>
+                        <li class="pad-bot25">Oppure <a href="">acquista ora</a> </li>
+                        <hr>
+                        <li class="pad-top50">
+                            <h5>Punti Salienti del piano</h5>
+                        </li>
+                        <li class="pad-top25"><i class="fa-solid fa-check"></i> Cartelle offline su dispositivi mobili</li>
+                        <li class="pad-top25"><i class="fa-solid fa-check"></i> Servizio assistenza 24/h</li>
+                        <li class="pad-top25"><i class="fa-solid fa-check"></i> Possibilit&agrave; di personalizzazione totale</li>
+                    </ul>
+                </div>
             </div>
 
             <!-- TEAM -->
             <section class="team debug">
-                <div class="row debug">
+                <div class="container debug">
+                    <div class="w100 txt-center">
+                        <span><i class="fa-solid fa-city"></i> Team</span>
+                    </div>
                     <div class="col-team-sx debug">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio et, labore doloribus quis nobis
-                        eum,
-                        nisi
-                        non repellat repudiandae voluptatum cum inventore ex laudantium, facilis iure modi neque? Ab,
-                        iste.
+                        <h4 class="plus-font pad-bot25">Enterprise</h4>
+                        <h5 class="pad-bot25 plus-font">Contatta l'ufficio vendite per i prezzi</h5>
+                        <p>Soluzioni personalizzate e supposto su misura per aiutare i professionisti IT nella gestione su quasiasi scala</p>
                     </div>
                     <div class="col-team-dx debug">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dicta animi odio molestias
-                        deleniti voluptatibus nostrum, esse fugiat non magni beatae maxime voluptate voluptas veniam
-                        libero blanditiis! Exercitationem, magnam dicta.
+                        <a class="blue-button" href="">Contatta l'ufficio vendite</a>
                     </div>
-                    <div class="col-team-down debug">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dicta animi odio molestias
-                        deleniti voluptatibus nostrum, esse fugiat non magni beatae maxime voluptate voluptas veniam
-                        libero blanditiis! Exercitationem, magnam dicta.
-                    </div>
+                    
                 </div>
             </section>
 
