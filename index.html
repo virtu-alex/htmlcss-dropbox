@@ -5,43 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'
+        integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=='
+        crossorigin='anonymous' />
     <link rel="stylesheet" href="css/style.css">
     <title>Titolo</title>
 </head>
 
-<body class="debug">
+<body>
 
     <!-- Header -->
 
     <header>
-        <div class="row-head debug">
-            <div class="col-head-sx debug">1</div>
-            <div class="col-head-dx debug">2</div>
+        <div class="row-head">
+            <div class="col-head"><img id="logo" src="img/logo-small.png" alt="logo dropbox">
+                <ul class="navbar">
+                    <li><a href="#">Perche' Dropbox</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                    <li><a href="#">Piani e prezzi</a></li>
+                </ul>
+            </div>
+            <div class="col-head">
+                <ul class="navbar">
+                    <li><a href="#">Supporto</a></li>
+                    <li><a href="#">L'ufficio vendite</a></li>
+                    <li><a href="#">Accedi</a></li>
+                    <li><a class="blue-button" href="#">Inizia</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <!-- Main -->
 
     <main>
-        <section class="jumbotron debug">
-            <div class="container-jumbo debug">
-                <div class="title debug">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium tenetur expedita beatae
-                    laudantium, quo quam consequuntur repellat id tempore ex?
-                </div>
-                <div class="jumbo-content debug">
-                    <div class="col-jumbo-sx debug">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit laborum illo iste nesciunt fugiat
-                        unde voluptatum vero! Ipsum quos, tenetur fuga reprehenderit sapiente molestias, aperiam nam
-                        vel, mollitia velit incidunt!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi reiciendis rerum earum sint
-                        iure cumque unde? Saepe assumenda at culpa eveniet ad facilis, ipsa maxime explicabo quasi,
-                        temporibus enim doloribus. lorem
+        <section class="jumbo-color">
+            <div class="jumbotron">
+                <div class="container-jumbo">
+                    <div class="title">
+                        <h1 class="pad-bot50">Tutto cio' che ti serve per il lavoro, in un unico posto</h1>
                     </div>
-                    <div class="col-jumbo-dx debug">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto temporibus amet mollitia, cumque
-                        vel optio doloribus repellendus eos sit quae molestiae fugit modi odit doloremque laboriosam ut.
-                        Quidem, libero ex!
+                    <div class="jumbo-content">
+                        <div class="col-jumbo-sx">
+                            <p class="pad-bot50">
+                                Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo
+                                stesso posto. Dropbox Business e' piu' di uno spazio di archiviazione sicuro: e' un modo
+                                intelligente e integrato per ottimizzare il flusso di lavoro esistente.
+                            </p>
+                            <div>
+                                <a class="blue-button" href="#">Inizia la tua prova gratuita</a>
+                            </div>
+                            <div id="annulla">
+                                <a href="#">Annulla in qualsiasi momento</a>
+                            </div>
+                            <div>
+                                <i class="pad-top50 fa-solid fa-arrow-down fa-3x"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-jumbo-dx">
+                            <img id="img-jumbo" src="img/jumbo.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,8 +75,11 @@
 
         <section class="container debug">
             <div class="title-top debug">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium tenetur expedita beatae
-                laudantium, quo quam consequuntur repellat id tempore ex?
+                <h2 class="pad-bot50 pad-top50">Trova il piano bisuness che fa per te</h2>
+            </div>
+            <div>
+                <span><i class="fa-solid fa-circle"></i>Fatturazione Mensile</span>
+                <span><i class="fa-solid fa-circle"></i>Fatturazione annuale</span>
             </div>
             <div class="plans debug">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati nemo quod voluptatem, esse corporis

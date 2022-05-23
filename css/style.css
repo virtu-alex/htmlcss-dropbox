@@ -5,13 +5,62 @@
 }
 
 body {
+    padding-top: 100px;
     font-family: 'Open Sans', sans-serif;
 }
 
+/* COLORS */
+
+/* #0061FF */
+
+/* #B4D0E7 */
+
 header {
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
     height: 100px;
-    border: 1px solid black;
+    line-height: 100px;
+    vertical-align: middle;
 }
+
+h1{
+    font-size: 6rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.navbar{
+    display: flex;
+}
+
+a{
+    color: black;
+}
+
+#annulla{
+    padding-top: 50px;
+}
+
+.navbar{
+    color: black;
+}
+.blue-button{
+    background-color: #0061FF;
+    color: white;
+    padding: 10px;
+}
+
+li{
+    padding-right: 3rem;
+}
+
 
 .debug {
     border: 1px solid black;
@@ -22,15 +71,17 @@ header {
     justify-content: space-between;
 }
 
-.col-head-sx .col-head-dx {
-    flex-basis: 50%;
-    height: 100px;
+.col-head {
+    display: flex;
+}
+
+img{
 }
 
 /* CONTAINERS */
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -38,17 +89,48 @@ header {
 
 .title {
     width: 100%;
-    height: 150px;
-    border: 1px solid black;
+}
+
+.jumbo-color {
+    background-color: #B4D0E7;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .jumbotron {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    height: 400px;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
+}
+
+#logo{
+    height: 50px;
+    padding-right: 50px;
+}
+
+p{
+    font-size: 2rem;
+}
+
+
+/* UTILS */
+
+
+.pad-bot50{
+    padding-bottom: 50px;
+}
+
+.pad-top50{
+    padding-top: 50px;
+}
+
+.pad-bot25{
+    padding-bottom: 25px;
+}
+
+.pad-top25{
+    padding-top: 25px;
 }
 
 .jumbo-content {
@@ -56,7 +138,23 @@ header {
 }
 
 .col-jumbo-sx {
-    flex-basis: 40%;
+    flex-basis: 100%;
+}
+
+#img-jumbo{
+    width: 100%;
+    height: auto;
+}
+
+.fa-solid{
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 3rem;
 }
 
 .col-jumbo-dx {
@@ -64,9 +162,16 @@ header {
 }
 
 .title-top {
-    margin: 0 auto;
-    width: 1000px;
-    height: 150px;
+    width: 100%;
+}
+
+span{
+    padding-right: 30px;
+}
+
+.fa-solid.fa-circle{
+    padding-right: 5px;
+    color: #4491C7;
 }
 
 .plans-card {
@@ -78,18 +183,17 @@ header {
     flex-basis: 30%;
 }
 
-.team {
-}
+.team {}
 
-.col-team-sx{
+.col-team-sx {
     flex-basis: 70%;
 }
 
-.col-team-dx{
+.col-team-dx {
     flex-basis: 30%;
 }
 
-.col-team-down{
+.col-team-down {
     flex-basis: 100%;
 }
 
@@ -98,28 +202,26 @@ header {
     height: 400px;
 }
 
-.col-partner-sx {
-}
+.col-partner-sx {}
 
-.col-partner-dx {
-}
+.col-partner-dx {}
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.col-business{
+.col-business {
     flex-basis: 30%;
 }
 
 
-.title-usage{
+.title-usage {
     margin-top: 2rem;
 }
 
-.square-container-sx{
+.square-container-sx {
     min-height: 400px;
     max-width: 25%;
     display: flex;
@@ -127,16 +229,16 @@ header {
     margin: 0 auto;
 }
 
-[class*="square"]{
+[class*="square"] {
     width: 50%;
-    height:200px;   
+    height: 200px;
 }
 
-.square{
+.square {
     background-color: lightgreen;
 }
 
-.under-square{
+.under-square {
     background-color: aqua;
     width: 100%;
 }
@@ -145,25 +247,26 @@ header {
     width: 50%;
     height: 150px;
 }
+
 .col-azienda-dx {
     width: 50%;
-    height: 150px;   
+    height: 150px;
 }
 
-.freq-question{
+.freq-question {
     height: 300px;
 }
 
-.col-freq-question{
+.col-freq-question {
     width: 100%;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
 }
 
-.col-footer{
+.col-footer {
     border: 1px solid white;
     flex-basis: calc(100% / 5);
 }
