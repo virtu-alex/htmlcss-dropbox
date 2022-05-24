@@ -15,6 +15,9 @@ body {
 
 /* #B4D0E7 */
 
+
+
+
 header {
     background-color: white;
     z-index: 1;
@@ -27,7 +30,8 @@ header {
     vertical-align: middle;
 }
 
-.navbar > li{
+.navbar-left>li,
+.navbar-right>li {
     padding-right: 3rem;
 }
 
@@ -39,12 +43,29 @@ ul {
     list-style-type: none;
 }
 
-
-.navbar {
-    display: flex;
+.navbar-left li:first-child {
+    height: 50px;
 }
 
-.offers{
+.navbar-left li:first-child a {
+    display: inline-block;
+    height: 100%;
+}
+
+.navbar-left .li:first-child a #logo {
+    height: 100%;
+}
+
+
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.offers {
     padding: 1rem;
 }
 
@@ -56,22 +77,22 @@ a {
     padding-top: 50px;
 }
 
-.navbar {
-    color: black;
-}
-
 .blue-button {
     background-color: #0061FF;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
-.offers > li{
+.offers>li {
     font-size: 1.5rem;
 }
 
+#partner-img {
+    width: 100%;
+}
+
 .debug {
-    border: 1px solid black;
+    border: 1px solid rgb(189, 184, 184);
 }
 
 .row-head {
@@ -81,6 +102,10 @@ a {
 
 .col-head {
     display: flex;
+}
+
+hr {
+    width: 30%;
 }
 
 /* CONTAINERS */
@@ -96,41 +121,33 @@ a {
     width: 100%;
 }
 
-.jumbo-color {
-    background-color: #B4D0E7;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.jumbotron {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
 
 #logo {
-    height: 50px;
+    height: 40px;
     padding-right: 50px;
 }
 
-.col-jumbo-sx > p{
+.col-jumbo-sx>p {
     font-size: 2rem;
 }
 
-
-
-
 /* UTILS */
 
+.d-il-block {
+    display: inline-block;
+}
 
 .pad-bot50 {
     padding-bottom: 50px;
+}
+.pad-bot100 {
+    padding-bottom: 100px;
 }
 
 .pad-top50 {
     padding-top: 50px;
 }
+
 .pad-top100 {
     padding-top: 100px;
 }
@@ -141,6 +158,55 @@ a {
 
 .pad-top25 {
     padding-top: 25px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.btn-contact{
+    background-color: #0061FF;
+    color: white;
+    padding: 10px 110px;
+    text-align: center;
+}
+
+.faq-border{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.btn-white {
+    background-color: white;
+    padding: 10px 40px;
+    
+}
+
+.plus-font {
+    font-size: 1.5rem;
+}
+
+.plus-font3 {
+    font-size: 1.7rem;
+}
+
+.color-red {
+    color: #61082B;
+}
+
+/* JUMBOTRON */
+
+.jumbo-color {
+    background-color: #B4D0E7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 850px;
+}
+
+.jumbotron {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .jumbo-content {
@@ -156,20 +222,29 @@ a {
     position: relative;
 }
 
-.w100{
-    width: 100%;
-}
 
 #img-jumbo {
     left: 0;
     position: absolute;
-    max-width: 130%;
     height: 600px;
 }
 
-.txt-center{
+.btn-partner {
+    padding: 10px;
+    border: 1px solid rgb(189, 184, 184);
+}
+
+.txt-center {
     padding: 1rem;
     text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.bor-bot {
+    border-bottom: 1px solid rgb(189, 184, 184);
 }
 
 .fa-solid {}
@@ -194,7 +269,7 @@ span {
     padding-right: 30px;
 }
 
-.row{
+.row {
     display: flex;
 }
 
@@ -203,9 +278,6 @@ span {
     color: #4491C7;
 }
 
-.plus-font{
-    font-size: 1.5rem;
-}
 
 .plans-card {
     display: flex;
@@ -214,19 +286,6 @@ span {
 
 .col-plans {
     flex-basis: 30%;
-}
-
-h5{
-    
-}
-
-.payment-mode{
-    padding: 10px;
-    border: 1px solid grey;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .fa-check {
@@ -243,24 +302,37 @@ h5{
     flex-basis: 40%;
 }
 
-.col-team-dx {
-    padding: 1rem;
-    flex-basis: 40%;
+.find-more {
+    text-decoration: underline;
+    color: blue;
 }
 
 .row-partner {
     display: flex;
-    height: 400px;
 }
 
-.col-partner-sx {}
+.col-partner-sx {
+    flex-basis: 70%;
+}
 
-.col-partner-dx {}
+.col-partner-dx {
+    padding: 1rem;
+    flex-basis: 30%;
+
+}
+
+img {
+    width: 100%;
+}
 
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.enlarge {
+    font-size: 2rem;
 }
 
 .col-business {
@@ -269,28 +341,132 @@ h5{
 
 
 .title-usage {
+    flex-basis: 60%;
     margin-top: 2rem;
 }
 
-.square-container-sx {
-    min-height: 400px;
-    max-width: 25%;
+
+/* SQUARES CONTAINER */
+
+
+.square-container {
+    background-color: #B4D0E7;
+    width: 100%;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
 }
 
-[class*="square"] {
+/* SQUARES LEFT */
+
+
+.square-left {
+    flex-wrap: wrap;
+    display: flex;
+    width: calc(100% / 3);
+}
+
+.green-square {
+    background-color: #A2D39B;
     width: 50%;
-    height: 200px;
+    height: 50%;
+
 }
 
-.square {
-    background-color: lightgreen;
+.darkred-square {
+    background-color: #61082B;
+    width: 50%;
+    height: 50%;
+
+}
+
+.blue-square {
+    background-color: #0093CE;
+    width: 50%;
+    height: 50%;
+
+}
+
+.red-square {
+    background-color: #FF1C1D;
+    width: 50%;
+    height: 50%;
+
+}
+
+/* SQUARE MID */
+
+.mid-square {
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: #f5f5f4;
+}
+
+/* SQUARES RIGHT */
+
+.square-right {
+    flex-wrap: wrap;
+    display: flex;
+    width: calc(100% / 3);
+}
+
+.yellow-square {
+    background-color: #FFD830;
+    width: 50%;
+    height: 50%;
+}
+
+.darkblue-square {
+    background-color: #0D2481;
+    width: 50%;
+    height: 50%;
+
+}
+
+.red-square {
+    width: 50%;
+    height: 50%;
+
+}
+
+.nocolor-square {
+    width: 50%;
+    height: 50%;
+}
+
+
+/* SQUARES CONTENT */
+
+
+#img-companies {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    filter: invert(100%);
+}
+
+.designit-container {
+    padding: 3rem;
+}
+
+.col-freq-question{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#designit {
+    display: block;
+    width: 50%;
+    height: 120px;
 }
 
 .under-square {
-    background-color: aqua;
+    background-color: #B4D0E7;
     width: 100%;
 }
 
@@ -300,16 +476,9 @@ h5{
 }
 
 .col-azienda-dx {
+    text-align: right;
     width: 50%;
     height: 150px;
-}
-
-.freq-question {
-    height: 300px;
-}
-
-.col-freq-question {
-    width: 100%;
 }
 
 footer {
