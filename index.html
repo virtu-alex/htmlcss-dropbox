@@ -9,7 +9,7 @@
         integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=='
         crossorigin='anonymous' />
     <link rel="stylesheet" href="css/style.css">
-    <title>Titolo</title>
+    <title>Dropbox</title>
 </head>
 
 <body>
@@ -18,22 +18,20 @@
 
     <header>
         <div class="row-head">
-            <div class="col-head">
-                <ul class="navbar-left">
-                    <li><a href="#"><img id="logo" src="img/logo-small.png" alt="logo dropbox"></a></li>
-                    <li><a href="#">Perch&egrave; Dropbox</a></li>
-                    <li><a href="#">Funzioni</a></li>
-                    <li><a href="#">Piani e prezzi</a></li>
-                </ul>
-            </div>
-            <div class="col-head">
-                <ul class="navbar-right">
-                    <li><a href="#">Supporto</a></li>
-                    <li><a href="#">L'ufficio vendite</a></li>
-                    <li><a href="#">Accedi</a></li>
-                    <li><a class="blue-button" href="#">Inizia</a></li>
-                </ul>
-            </div>
+            <ul class="navbar-left">
+                <li><a href="#"><img id="logo" src="img/logo-small.png" alt="logo dropbox"></a></li>
+                <li><a href="#">Perch&egrave; Dropbox</a></li>
+                <li><a href="#">Funzioni</a></li>
+                <li><a href="#">Piani e prezzi</a></li>
+            </ul>
+        </div>
+        <ul class="navbar-right">
+            <li><a href="#">Supporto</a></li>
+            <li><a href="#">L'ufficio vendite</a></li>
+            <li><a href="#">Accedi</a></li>
+            <li><a class="blue-button" href="#">Inizia</a></li>
+        </ul>
+        </div>
         </div>
     </header>
 
@@ -48,7 +46,7 @@
                     </div>
                     <div class="jumbo-content">
                         <div class="col-jumbo-sx">
-                            <p class="pad-bot50 font-plus">
+                            <p class="pad-bot50 pad-top120 font-plus">
                                 Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo
                                 stesso posto. Dropbox Business e' piu' di uno spazio di archiviazione sicuro: e' un modo
                                 intelligente e integrato per ottimizzare il flusso di lavoro esistente.
@@ -56,11 +54,11 @@
                             <div>
                                 <a class="blue-button" href="#">Inizia la tua prova gratuita</a>
                             </div>
-                            <div id="annulla">
+                            <div class="pad-top50">
                                 <a href="#">Annulla in qualsiasi momento</a>
                             </div>
                             <div>
-                                <a href=""><i class="pad-top50 fa-solid fa-arrow-down fa-3x"></a></i>
+                                <a href="#plan-business"><i class="pad-top50 fa-solid fa-arrow-down fa-3x"></a></i>
                             </div>
                         </div>
 
@@ -74,7 +72,7 @@
 
         <!-- PIANI D'ACQUISTO -->
 
-        <section class="container pad-bot50">
+        <section id="plan-business" class="container pad-bot50">
             <div class="title-top">
                 <h2 class="pad-bot50 pad-top100">Trova il piano bisuness che fa per te</h2>
             </div>
@@ -101,11 +99,12 @@
                         </li>
                         <li class="pad-bot25"><a class="blue-button plus-font" href="#">Prova gratis per 30 giorni</a>
                         </li>
-                        <li class="pad-bot25">Oppure <a href="">acquista ora</a> </li>
+                        <li class="pad-bot25">Oppure <a class="find-more" href="">acquista ora</a> </li>
                         <hr>
                         <li class="pad-top50">
                             <h5>Punti Salienti del piano</h5>
                         </li>
+
                         <li class="pad-top25"><i class="fa-solid fa-check"></i> Invia file fino a 100 GB con Dropbox
                             Transfert</li>
                         <li class="pad-top25"><i class="fa-solid fa-check"></i> Cartelle offline su dispositivi mobili
@@ -128,7 +127,7 @@
                             tuo team</li>
                         <li class="pad-bot25"><a class="blue-button plus-font" href="#">Prova gratis per 30 giorni</a>
                         </li>
-                        <li class="pad-bot25">Oppure <a href="">acquista ora</a> </li>
+                        <li class="pad-bot25">Oppure <a class="find-more" href="">acquista ora</a> </li>
                         <hr>
                         <li class="pad-top50">
                             <h5>Punti Salienti del piano</h5>
@@ -159,7 +158,7 @@
                             aiutare gli amministratori in una gestione
                             su larga scala</li>
                         <li class="pad-bot25"><a class="btn-contact plus-font" href="#">Contattaci</a></li>
-                        <li class="pad-bot25">Oppure <a href="">acquista ora</a> </li>
+                        <li class="pad-bot25">Oppure <a class="find-more" href="">acquista ora</a> </li>
                         <hr>
                         <li class="pad-top50">
                             <h5>Punti Salienti del piano</h5>
@@ -174,7 +173,7 @@
             </div>
 
             <!-- TEAM -->
-            <section class="team pad-bot50">
+            <section class="team pad-bot100">
                 <div class="container debug">
                     <div class="w100 txt-center bor-bot">
                         <span><i class="fa-solid fa-city"></i> Team</span>
@@ -186,13 +185,13 @@
                             su quasiasi scala</p>
                     </div>
                     <div class="col-team-dx">
-                        <a class="blue-button" href="">Contatta l'ufficio vendite</a>
+                        <a class="btn-move blue-button" href="">Contatta l'ufficio vendite</a>
                     </div>
 
                 </div>
             </section>
 
-            <div class="row-partner pad-bot50">
+            <div class="row-partner pad-bot100">
                 <div class="col-partner-sx">
                     <img id="partner-img" src="img/partner.png" alt="">
                 </div>
@@ -209,7 +208,7 @@
                 <div class="title-top pad-bot25">
                     <h2>Esegui pi&ugrave; operazioni con Dropbox Business</h2>
                 </div>
-                <div class="row">
+                <div class="row pad-bot100<a>">
                     <div class="col-business">
                         <img src="img/business-feature-switching-tools.png" alt="business-feature-switching-tools">
                         <h4 class="enlarge pad-bot25">Passa di meno da uno strumento all'altro</h4>
@@ -333,7 +332,7 @@
         </section>
         <section class="under-square pad-top100 pad-bot50">
             <div class="container ">
-                <div class="row ">
+                <div class="row">
                     <div class="col-azienda-sx ">
                         <h2 class="color-red">Porta Dropbox Business nella tua azienda.</h2>
                     </div>
@@ -344,20 +343,22 @@
             </div>
         </section>
         <section class="freq-question container pad-top100 pad-bot100">
-
             <div class="col-freq-question faq-border">
                 <h2 class="pad-bot50">Domande frequenti</h2>
             </div>
-            <div class="col-freq-question faq-border pad-top25 pad-bot25">
-                <p><b>Qual &eacute; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</b>
-                </p><i class="fa-solid fa-angle-down"></i>
+            <div class="col-freq-question faq-border pad-top50 pad-bot50">
+                <p><b>Qual &eacute; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</b></p><i
+                    class="fa-solid fa-angle-down"></i>
+
             </div>
-            <div class="col-freq-question faq-border pad-top25 pad-bot25">
-                <p><b>Qual &eacute; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</b>
-                </p><i class="fa-solid fa-angle-down"></i>
+            <div class="col-freq-question faq-border pad-top50 pad-bot50">
+                <p><b>Qual &eacute; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</b></p>
+
+                <i class="fa-solid fa-angle-down"></i>
             </div>
-            <div class="col-freq-question faq-border pad-top25 pad-bot25">
-                <p><b>Qual &eacute; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</b></p><i class="fa-solid fa-angle-down"></i>
+            <div class="col-freq-question faq-border pad-top50 pad-bot50">
+                <p><b>Qual &eacute; la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</b></p><i
+                    class="fa-solid fa-angle-down"></i>
 
             </div>
 
@@ -368,21 +369,71 @@
     <!-- Footer -->
     <footer>
         <div class="row jumbotron">
-            <div class="col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quaerat rerum saepe
-                temporibus ad enim provident fugiat deleniti numquam, iure esse sapiente consequatur cupiditate
-                necessitatibus reiciendis nobis! Illum, dicta illo.</div>
-            <div class="col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tenetur voluptates
-                repellat quasi laudantium. Officiis, repellendus magni accusamus odio, ipsum repudiandae rerum in rem ex
-                sequi nam maiores laborum iusto.lorem</div>
-            <div class="col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas totam sequi voluptates
-                dignissimos nobis possimus explicabo, voluptas autem, fuga animi repudiandae illo. Corrupti quibusdam
-                consequatur eius, cumque itaque odio voluptatibus.</div>
-            <div class="col-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tenetur ipsam, ea
-                molestias harum ratione ad culpa modi, velit facere iure totam ex? Fugiat, harum quam quidem porro rerum
-                corporis?</div>
-            <div class="col-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius est, minus
-                delectus pariatur velit inventore neque natus commodi harum veniam iusto dicta dolores. Quisquam quaerat
-                voluptates tempore aut quam!</div>
+            <div class="col-footer pad-top100">
+                <ul class="color-white">
+                    <li class="pad-bot25">
+                        <h5 class="plus-font">Dropbox</h5>
+                    </li>
+                    <li class="pad-bot10"><a>Applicazione desktop</a></li>
+                    <li class="pad-bot10"><a>Perch&egrave; Dropbox</a></li>
+                    <li class="pad-bot10"><a>Piani</a></li>
+                    <li class="pad-bot10"><a>Sicurezza</a></li>
+                    <li class="pad-bot10"><a>Funzioni</a></li>
+                    <hr class="hr-footer mb-top50">
+                    <li class="color-grey"><i class="fa-solid fa-earth-americas pad-top25"></i> <span>Italiano<sub> <i
+                                    class="fa-solid fa-sort-up"></i></sub></span></li>
+                </ul>
+            </div>
+            <div class="col-footer pad-top100">
+                <ul class="color-white">
+                    <li class="pad-bot25">
+                        <h5 class="plus-font">Prodotti</h5>
+                    </li>
+                    <li class="pad-bot10"><a>Applicazione desktop</a></li>
+                    <li class="pad-bot10"><a>Perch&egrave; Dropbox</a></li>
+                    <li class="pad-bot10"><a>Piani</a></li>
+                    <li class="pad-bot10"><a>Sicurezza</a></li>
+                    <li class="pad-bot10"><a>Funzioni</a></li>
+                </ul>
+            </div>
+            <div class="col-footer pad-top100">
+                <ul class="color-white">
+                    <li class="pad-bot25">
+                        <h5 class="plus-font">Azienda</h5>
+                    </li>
+                    <li class="pad-bot10"><a>Applicazione desktop</a></li>
+                    <li class="pad-bot10"><a>Perch&egrave; Dropbox</a></li>
+                    <li class="pad-bot10"><a>Piani</a></li>
+                    <li class="pad-bot10"><a>Sicurezza</a></li>
+                    <li class="pad-bot10"><a>Funzioni</a></li>
+                </ul>
+            </div>
+            <div class="col-footer pad-top100">
+                <ul class="color-white">
+                    <li class="pad-bot25">
+                        <h5 class="plus-font">Supporto</h5>
+                    </li>
+                    <li class="pad-bot10"><a>Applicazione desktop</a></li>
+                    <li class="pad-bot10"><a>Perch&egrave; Dropbox</a></li>
+                    <li class="pad-bot10"><a>Piani</a></li>
+                    <li class="pad-bot10"><a>Sicurezza</a></li>
+                    <li class="pad-bot10"><a>Funzioni</a></li>
+                </ul>
+            </div>
+            <div class="col-footer pad-top100">
+                <ul class="color-white">
+                    <li class="pad-bot25">
+                        <h5 class="plus-font">Community</h5>
+                    </li>
+                    <li class="pad-bot10"><a>Applicazione desktop</a></li>
+                    <li class="pad-bot10"><a>Perch&egrave; Dropbox</a></li>
+                    <li class="pad-bot10"><a>Piani</a></li>
+                    <li class="pad-bot10"><a>Sicurezza</a></li>
+                    <li class="pad-bot10"><a>Funzioni</a></li>
+                </ul>
+            </div>
+
+
         </div>
 
 
